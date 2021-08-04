@@ -1,0 +1,88 @@
+<svg width="354pt" height="432pt"
+ viewBox="0.00 0.00 354.00 432.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 428)">
+<title>Workflow</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-428 350,-428 350,4 -4,4"/>
+<text text-anchor="middle" x="173" y="-405.6" font-family="Helvetica,sans-Serif" font-size="18.00">MenuDataCleanupWorkflow</text>
+<g id="clust1" class="cluster">
+<title>cluster_workflow_box_outer</title>
+<polygon fill="none" stroke="black" stroke-width="2" points="8,-34 8,-362 338,-362 338,-34 8,-34"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_workflow_box_inner</title>
+<polygon fill="none" stroke="black" stroke-width="0" points="16,-42 16,-354 330,-354 330,-42 16,-42"/>
+</g>
+<!-- Menu.csv -->
+<g id="node1" class="node">
+<title>Menu.csv</title>
+<path fill="#ffffcc" stroke="black" d="M109,-299.5C109,-299.5 237,-299.5 237,-299.5 243,-299.5 249,-305.5 249,-311.5 249,-311.5 249,-333.5 249,-333.5 249,-339.5 243,-345.5 237,-345.5 237,-345.5 109,-345.5 109,-345.5 103,-345.5 97,-339.5 97,-333.5 97,-333.5 97,-311.5 97,-311.5 97,-305.5 103,-299.5 109,-299.5"/>
+<text text-anchor="middle" x="173" y="-330.3" font-family="Helvetica,sans-Serif" font-size="14.00">Menu.csv</text>
+<polyline fill="none" stroke="black" points="97,-322.5 249,-322.5 "/>
+<text text-anchor="middle" x="173" y="-307.3" font-family="Helvetica,sans-Serif" font-size="14.00">file://project/Menu.csv</text>
+</g>
+<!-- cleaned_menu_with_or.csv -->
+<g id="node2" class="node">
+<title>cleaned_menu_with_or.csv</title>
+<path fill="#ffffcc" stroke="black" d="M36,-216.5C36,-216.5 310,-216.5 310,-216.5 316,-216.5 322,-222.5 322,-228.5 322,-228.5 322,-250.5 322,-250.5 322,-256.5 316,-262.5 310,-262.5 310,-262.5 36,-262.5 36,-262.5 30,-262.5 24,-256.5 24,-250.5 24,-250.5 24,-228.5 24,-228.5 24,-222.5 30,-216.5 36,-216.5"/>
+<text text-anchor="middle" x="173" y="-247.3" font-family="Helvetica,sans-Serif" font-size="14.00">cleaned_menu_with_or.csv</text>
+<polyline fill="none" stroke="black" points="24,-239.5 322,-239.5 "/>
+<text text-anchor="middle" x="173" y="-224.3" font-family="Helvetica,sans-Serif" font-size="14.00">file://project/clean/cleaned_menu_with_or.csv</text>
+</g>
+<!-- Menu.csv&#45;&gt;cleaned_menu_with_or.csv -->
+<g id="edge1" class="edge">
+<title>Menu.csv&#45;&gt;cleaned_menu_with_or.csv</title>
+<path fill="none" stroke="black" d="M173,-299.37C173,-291.15 173,-281.66 173,-272.73"/>
+<polygon fill="black" stroke="black" points="176.5,-272.61 173,-262.61 169.5,-272.61 176.5,-272.61"/>
+</g>
+<!-- menu -->
+<g id="node3" class="node">
+<title>menu</title>
+<path fill="#ffffcc" stroke="black" d="M96.5,-133.5C96.5,-133.5 249.5,-133.5 249.5,-133.5 255.5,-133.5 261.5,-139.5 261.5,-145.5 261.5,-145.5 261.5,-167.5 261.5,-167.5 261.5,-173.5 255.5,-179.5 249.5,-179.5 249.5,-179.5 96.5,-179.5 96.5,-179.5 90.5,-179.5 84.5,-173.5 84.5,-167.5 84.5,-167.5 84.5,-145.5 84.5,-145.5 84.5,-139.5 90.5,-133.5 96.5,-133.5"/>
+<text text-anchor="middle" x="173" y="-164.3" font-family="Helvetica,sans-Serif" font-size="14.00">menu</text>
+<polyline fill="none" stroke="black" points="84.5,-156.5 261.5,-156.5 "/>
+<text text-anchor="middle" x="173" y="-141.3" font-family="Helvetica,sans-Serif" font-size="14.00">sqlite://database.db/menu</text>
+</g>
+<!-- cleaned_menu_with_or.csv&#45;&gt;menu -->
+<g id="edge2" class="edge">
+<title>cleaned_menu_with_or.csv&#45;&gt;menu</title>
+<path fill="none" stroke="black" d="M173,-216.37C173,-208.15 173,-198.66 173,-189.73"/>
+<polygon fill="black" stroke="black" points="176.5,-189.61 173,-179.61 169.5,-189.61 176.5,-189.61"/>
+</g>
+<!-- cleaned_menu -->
+<g id="node4" class="node">
+<title>cleaned_menu</title>
+<path fill="#ffffcc" stroke="black" d="M68,-50.5C68,-50.5 278,-50.5 278,-50.5 284,-50.5 290,-56.5 290,-62.5 290,-62.5 290,-84.5 290,-84.5 290,-90.5 284,-96.5 278,-96.5 278,-96.5 68,-96.5 68,-96.5 62,-96.5 56,-90.5 56,-84.5 56,-84.5 56,-62.5 56,-62.5 56,-56.5 62,-50.5 68,-50.5"/>
+<text text-anchor="middle" x="173" y="-81.3" font-family="Helvetica,sans-Serif" font-size="14.00">cleaned_menu</text>
+<polyline fill="none" stroke="black" points="56,-73.5 290,-73.5 "/>
+<text text-anchor="middle" x="173" y="-58.3" font-family="Helvetica,sans-Serif" font-size="14.00">sqlite://database.db/cleaned_menu</text>
+</g>
+<!-- menu&#45;&gt;cleaned_menu -->
+<g id="edge3" class="edge">
+<title>menu&#45;&gt;cleaned_menu</title>
+<path fill="none" stroke="black" d="M173,-133.37C173,-125.15 173,-115.66 173,-106.73"/>
+<polygon fill="black" stroke="black" points="176.5,-106.61 173,-96.61 169.5,-106.61 176.5,-106.61"/>
+</g>
+<!-- cleaned_menu_output_port -->
+<g id="node6" class="node">
+<title>cleaned_menu_output_port</title>
+<ellipse fill="#ffffff" stroke="black" cx="173" cy="-7" rx="7" ry="7"/>
+</g>
+<!-- cleaned_menu&#45;&gt;cleaned_menu_output_port -->
+<g id="edge5" class="edge">
+<title>cleaned_menu&#45;&gt;cleaned_menu_output_port</title>
+<path fill="none" stroke="black" d="M173,-50.3C173,-41.68 173,-32 173,-24.08"/>
+<polygon fill="black" stroke="black" points="176.5,-24.05 173,-14.05 169.5,-24.05 176.5,-24.05"/>
+</g>
+<!-- Menu.csv_input_port -->
+<g id="node5" class="node">
+<title>Menu.csv_input_port</title>
+<ellipse fill="#ffffff" stroke="black" cx="173" cy="-389" rx="7" ry="7"/>
+</g>
+<!-- Menu.csv_input_port&#45;&gt;Menu.csv -->
+<g id="edge4" class="edge">
+<title>Menu.csv_input_port&#45;&gt;Menu.csv</title>
+<path fill="none" stroke="black" d="M173,-381.58C173,-375.38 173,-365.52 173,-355.66"/>
+<polygon fill="black" stroke="black" points="176.5,-355.55 173,-345.55 169.5,-355.55 176.5,-355.55"/>
+</g>
+</g>
+</svg>

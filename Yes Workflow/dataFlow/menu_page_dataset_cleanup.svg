@@ -1,0 +1,63 @@
+<svg width="586pt" height="323pt"
+ viewBox="0.00 0.00 586.00 323.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 319)">
+<title>Workflow</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-319 582,-319 582,4 -4,4"/>
+<text text-anchor="middle" x="289" y="-296.6" font-family="Helvetica,sans-Serif" font-size="18.00">MenuPageDataCleanupWorkflow</text>
+<g id="clust1" class="cluster">
+<title>cluster_workflow_box_outer</title>
+<polygon fill="none" stroke="black" stroke-width="2" points="8,-8 8,-253 570,-253 570,-8 8,-8"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_workflow_box_inner</title>
+<polygon fill="none" stroke="black" stroke-width="0" points="16,-16 16,-245 562,-245 562,-16 16,-16"/>
+</g>
+<!-- MenuPageDataCleanupWithOpenrRefine -->
+<g id="node1" class="node">
+<title>MenuPageDataCleanupWithOpenrRefine</title>
+<polygon fill="#ccffcc" stroke="black" points="144,-190.5 144,-236.5 434,-236.5 434,-190.5 144,-190.5"/>
+<text text-anchor="middle" x="289" y="-221.3" font-family="Helvetica,sans-Serif" font-size="14.00">MenuPageDataCleanupWithOpenrRefine</text>
+<polyline fill="none" stroke="black" points="144,-213.5 434,-213.5 "/>
+<text text-anchor="middle" x="289" y="-198.3" font-family="Helvetica,sans-Serif" font-size="14.00">Clean MenuPage dataset using OpenRefine</text>
+</g>
+<!-- LoadMenuPageDataIntoSqlite -->
+<g id="node2" class="node">
+<title>LoadMenuPageDataIntoSqlite</title>
+<polygon fill="#ccffcc" stroke="black" points="70.5,-107.5 70.5,-153.5 507.5,-153.5 507.5,-107.5 70.5,-107.5"/>
+<text text-anchor="middle" x="289" y="-138.3" font-family="Helvetica,sans-Serif" font-size="14.00">LoadMenuPageDataIntoSqlite</text>
+<polyline fill="none" stroke="black" points="70.5,-130.5 507.5,-130.5 "/>
+<text text-anchor="middle" x="289" y="-115.3" font-family="Helvetica,sans-Serif" font-size="14.00">Load cleaned_menu_page_with_or.csv into Sqlite table menu_page</text>
+</g>
+<!-- MenuPageDataCleanupWithOpenrRefine&#45;&gt;LoadMenuPageDataIntoSqlite -->
+<g id="edge1" class="edge">
+<title>MenuPageDataCleanupWithOpenrRefine&#45;&gt;LoadMenuPageDataIntoSqlite</title>
+<path fill="none" stroke="black" d="M289,-190.37C289,-182.15 289,-172.66 289,-163.73"/>
+<polygon fill="black" stroke="black" points="292.5,-163.61 289,-153.61 285.5,-163.61 292.5,-163.61"/>
+</g>
+<!-- MenuPageDataCleanupWithSQL -->
+<g id="node3" class="node">
+<title>MenuPageDataCleanupWithSQL</title>
+<polygon fill="#ccffcc" stroke="black" points="24,-24.5 24,-70.5 554,-70.5 554,-24.5 24,-24.5"/>
+<text text-anchor="middle" x="289" y="-55.3" font-family="Helvetica,sans-Serif" font-size="14.00">MenuPageDataCleanupWithSQL</text>
+<polyline fill="none" stroke="black" points="24,-47.5 554,-47.5 "/>
+<text text-anchor="middle" x="289" y="-32.3" font-family="Helvetica,sans-Serif" font-size="14.00">Perform SQL operations to check integrity constraints and functional dependencies</text>
+</g>
+<!-- LoadMenuPageDataIntoSqlite&#45;&gt;MenuPageDataCleanupWithSQL -->
+<g id="edge2" class="edge">
+<title>LoadMenuPageDataIntoSqlite&#45;&gt;MenuPageDataCleanupWithSQL</title>
+<path fill="none" stroke="black" d="M289,-107.37C289,-99.15 289,-89.66 289,-80.73"/>
+<polygon fill="black" stroke="black" points="292.5,-80.61 289,-70.61 285.5,-80.61 292.5,-80.61"/>
+</g>
+<!-- MenuPage.csv_input_port -->
+<g id="node4" class="node">
+<title>MenuPage.csv_input_port</title>
+<ellipse fill="#ffffff" stroke="black" cx="289" cy="-280" rx="7" ry="7"/>
+</g>
+<!-- MenuPage.csv_input_port&#45;&gt;MenuPageDataCleanupWithOpenrRefine -->
+<g id="edge3" class="edge">
+<title>MenuPage.csv_input_port&#45;&gt;MenuPageDataCleanupWithOpenrRefine</title>
+<path fill="none" stroke="black" d="M289,-272.58C289,-266.38 289,-256.52 289,-246.66"/>
+<polygon fill="black" stroke="black" points="292.5,-246.55 289,-236.55 285.5,-246.55 292.5,-246.55"/>
+</g>
+</g>
+</svg>

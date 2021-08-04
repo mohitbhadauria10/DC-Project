@@ -1,0 +1,154 @@
+<svg width="586pt" height="681pt"
+ viewBox="0.00 0.00 586.00 681.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 677)">
+<title>Workflow</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-677 582,-677 582,4 -4,4"/>
+<text text-anchor="middle" x="289" y="-654.6" font-family="Helvetica,sans-Serif" font-size="18.00">DishDataCleanupWorkflow</text>
+<g id="clust1" class="cluster">
+<title>cluster_workflow_box_outer</title>
+<polygon fill="none" stroke="black" stroke-width="2" points="8,-34 8,-611 570,-611 570,-34 8,-34"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_workflow_box_inner</title>
+<polygon fill="none" stroke="black" stroke-width="0" points="16,-42 16,-603 562,-603 562,-42 16,-42"/>
+</g>
+<!-- DishDataCleanupWithOpenRefine -->
+<g id="node1" class="node">
+<title>DishDataCleanupWithOpenRefine</title>
+<polygon fill="#ccffcc" stroke="black" points="268.5,-465.5 268.5,-511.5 519.5,-511.5 519.5,-465.5 268.5,-465.5"/>
+<text text-anchor="middle" x="394" y="-496.3" font-family="Helvetica,sans-Serif" font-size="14.00">DishDataCleanupWithOpenRefine</text>
+<polyline fill="none" stroke="black" points="268.5,-488.5 519.5,-488.5 "/>
+<text text-anchor="middle" x="394" y="-473.3" font-family="Helvetica,sans-Serif" font-size="14.00">Clean Dish dataset using OpenRefine</text>
+</g>
+<!-- cleaned_dish_with_or.csv -->
+<g id="node5" class="node">
+<title>cleaned_dish_with_or.csv</title>
+<path fill="#ffffcc" stroke="black" d="M280,-382.5C280,-382.5 508,-382.5 508,-382.5 514,-382.5 520,-388.5 520,-394.5 520,-394.5 520,-416.5 520,-416.5 520,-422.5 514,-428.5 508,-428.5 508,-428.5 280,-428.5 280,-428.5 274,-428.5 268,-422.5 268,-416.5 268,-416.5 268,-394.5 268,-394.5 268,-388.5 274,-382.5 280,-382.5"/>
+<text text-anchor="middle" x="394" y="-413.3" font-family="Helvetica,sans-Serif" font-size="14.00">cleaned_dish_with_or.csv</text>
+<polyline fill="none" stroke="black" points="268,-405.5 520,-405.5 "/>
+<text text-anchor="middle" x="394" y="-390.3" font-family="Helvetica,sans-Serif" font-size="14.00">file://project/cleaned_dish_with_or.csv</text>
+</g>
+<!-- DishDataCleanupWithOpenRefine&#45;&gt;cleaned_dish_with_or.csv -->
+<g id="edge1" class="edge">
+<title>DishDataCleanupWithOpenRefine&#45;&gt;cleaned_dish_with_or.csv</title>
+<path fill="none" stroke="black" d="M394,-465.37C394,-457.15 394,-447.66 394,-438.73"/>
+<polygon fill="black" stroke="black" points="397.5,-438.61 394,-428.61 390.5,-438.61 397.5,-438.61"/>
+</g>
+<!-- LoadDishDataIntoSqlite -->
+<g id="node2" class="node">
+<title>LoadDishDataIntoSqlite</title>
+<polygon fill="#ccffcc" stroke="black" points="157,-299.5 157,-345.5 497,-345.5 497,-299.5 157,-299.5"/>
+<text text-anchor="middle" x="327" y="-330.3" font-family="Helvetica,sans-Serif" font-size="14.00">LoadDishDataIntoSqlite</text>
+<polyline fill="none" stroke="black" points="157,-322.5 497,-322.5 "/>
+<text text-anchor="middle" x="327" y="-307.3" font-family="Helvetica,sans-Serif" font-size="14.00">Load cleaned_dish_with_or.csv into Sqlite table dish</text>
+</g>
+<!-- dish -->
+<g id="node6" class="node">
+<title>dish</title>
+<path fill="#ffffcc" stroke="black" d="M255.5,-216.5C255.5,-216.5 398.5,-216.5 398.5,-216.5 404.5,-216.5 410.5,-222.5 410.5,-228.5 410.5,-228.5 410.5,-250.5 410.5,-250.5 410.5,-256.5 404.5,-262.5 398.5,-262.5 398.5,-262.5 255.5,-262.5 255.5,-262.5 249.5,-262.5 243.5,-256.5 243.5,-250.5 243.5,-250.5 243.5,-228.5 243.5,-228.5 243.5,-222.5 249.5,-216.5 255.5,-216.5"/>
+<text text-anchor="middle" x="327" y="-247.3" font-family="Helvetica,sans-Serif" font-size="14.00">dish</text>
+<polyline fill="none" stroke="black" points="243.5,-239.5 410.5,-239.5 "/>
+<text text-anchor="middle" x="327" y="-224.3" font-family="Helvetica,sans-Serif" font-size="14.00">sqlite://database.db/dish</text>
+</g>
+<!-- LoadDishDataIntoSqlite&#45;&gt;dish -->
+<g id="edge3" class="edge">
+<title>LoadDishDataIntoSqlite&#45;&gt;dish</title>
+<path fill="none" stroke="black" d="M327,-299.37C327,-291.15 327,-281.66 327,-272.73"/>
+<polygon fill="black" stroke="black" points="330.5,-272.61 327,-262.61 323.5,-272.61 330.5,-272.61"/>
+</g>
+<!-- DishDataCleanupWithSQL -->
+<g id="node3" class="node">
+<title>DishDataCleanupWithSQL</title>
+<polygon fill="#ccffcc" stroke="black" points="24,-133.5 24,-179.5 554,-179.5 554,-133.5 24,-133.5"/>
+<text text-anchor="middle" x="289" y="-164.3" font-family="Helvetica,sans-Serif" font-size="14.00">DishDataCleanupWithSQL</text>
+<polyline fill="none" stroke="black" points="24,-156.5 554,-156.5 "/>
+<text text-anchor="middle" x="289" y="-141.3" font-family="Helvetica,sans-Serif" font-size="14.00">Perform SQL operations to check integrity constraints and functional dependencies</text>
+</g>
+<!-- cleaned_dish -->
+<g id="node7" class="node">
+<title>cleaned_dish</title>
+<path fill="#ffffcc" stroke="black" d="M189,-50.5C189,-50.5 389,-50.5 389,-50.5 395,-50.5 401,-56.5 401,-62.5 401,-62.5 401,-84.5 401,-84.5 401,-90.5 395,-96.5 389,-96.5 389,-96.5 189,-96.5 189,-96.5 183,-96.5 177,-90.5 177,-84.5 177,-84.5 177,-62.5 177,-62.5 177,-56.5 183,-50.5 189,-50.5"/>
+<text text-anchor="middle" x="289" y="-81.3" font-family="Helvetica,sans-Serif" font-size="14.00">cleaned_dish</text>
+<polyline fill="none" stroke="black" points="177,-73.5 401,-73.5 "/>
+<text text-anchor="middle" x="289" y="-58.3" font-family="Helvetica,sans-Serif" font-size="14.00">sqlite://database.db/cleaned_dish</text>
+</g>
+<!-- DishDataCleanupWithSQL&#45;&gt;cleaned_dish -->
+<g id="edge6" class="edge">
+<title>DishDataCleanupWithSQL&#45;&gt;cleaned_dish</title>
+<path fill="none" stroke="black" d="M289,-133.37C289,-125.15 289,-115.66 289,-106.73"/>
+<polygon fill="black" stroke="black" points="292.5,-106.61 289,-96.61 285.5,-106.61 292.5,-106.61"/>
+</g>
+<!-- Dish.csv -->
+<g id="node4" class="node">
+<title>Dish.csv</title>
+<path fill="#ffffcc" stroke="black" d="M333.5,-548.5C333.5,-548.5 454.5,-548.5 454.5,-548.5 460.5,-548.5 466.5,-554.5 466.5,-560.5 466.5,-560.5 466.5,-582.5 466.5,-582.5 466.5,-588.5 460.5,-594.5 454.5,-594.5 454.5,-594.5 333.5,-594.5 333.5,-594.5 327.5,-594.5 321.5,-588.5 321.5,-582.5 321.5,-582.5 321.5,-560.5 321.5,-560.5 321.5,-554.5 327.5,-548.5 333.5,-548.5"/>
+<text text-anchor="middle" x="394" y="-579.3" font-family="Helvetica,sans-Serif" font-size="14.00">Dish.csv</text>
+<polyline fill="none" stroke="black" points="321.5,-571.5 466.5,-571.5 "/>
+<text text-anchor="middle" x="394" y="-556.3" font-family="Helvetica,sans-Serif" font-size="14.00">file://project/Dish.csv</text>
+</g>
+<!-- Dish.csv&#45;&gt;DishDataCleanupWithOpenRefine -->
+<g id="edge2" class="edge">
+<title>Dish.csv&#45;&gt;DishDataCleanupWithOpenRefine</title>
+<path fill="none" stroke="black" d="M394,-548.37C394,-540.15 394,-530.66 394,-521.73"/>
+<polygon fill="black" stroke="black" points="397.5,-521.61 394,-511.61 390.5,-521.61 397.5,-521.61"/>
+</g>
+<!-- cleaned_dish_with_or.csv&#45;&gt;LoadDishDataIntoSqlite -->
+<g id="edge4" class="edge">
+<title>cleaned_dish_with_or.csv&#45;&gt;LoadDishDataIntoSqlite</title>
+<path fill="none" stroke="black" d="M375.69,-382.37C368.31,-373.44 359.67,-363 351.74,-353.41"/>
+<polygon fill="black" stroke="black" points="354.36,-351.08 345.29,-345.61 348.96,-355.54 354.36,-351.08"/>
+</g>
+<!-- dish&#45;&gt;DishDataCleanupWithSQL -->
+<g id="edge7" class="edge">
+<title>dish&#45;&gt;DishDataCleanupWithSQL</title>
+<path fill="none" stroke="black" d="M316.62,-216.37C312.64,-207.88 308.02,-198.04 303.71,-188.85"/>
+<polygon fill="black" stroke="black" points="306.79,-187.17 299.37,-179.61 300.45,-190.15 306.79,-187.17"/>
+</g>
+<!-- cleaned_dish_output_port -->
+<g id="node11" class="node">
+<title>cleaned_dish_output_port</title>
+<ellipse fill="#ffffff" stroke="black" cx="289" cy="-7" rx="7" ry="7"/>
+</g>
+<!-- cleaned_dish&#45;&gt;cleaned_dish_output_port -->
+<g id="edge10" class="edge">
+<title>cleaned_dish&#45;&gt;cleaned_dish_output_port</title>
+<path fill="none" stroke="black" d="M289,-50.3C289,-41.68 289,-32 289,-24.08"/>
+<polygon fill="black" stroke="black" points="292.5,-24.05 289,-14.05 285.5,-24.05 292.5,-24.05"/>
+</g>
+<!-- data_load_script -->
+<g id="node8" class="node">
+<title>data_load_script</title>
+<path fill="#fcfcfc" stroke="black" d="M237.5,-423.5C237.5,-423.5 142.5,-423.5 142.5,-423.5 136.5,-423.5 130.5,-417.5 130.5,-411.5 130.5,-411.5 130.5,-399.5 130.5,-399.5 130.5,-393.5 136.5,-387.5 142.5,-387.5 142.5,-387.5 237.5,-387.5 237.5,-387.5 243.5,-387.5 249.5,-393.5 249.5,-399.5 249.5,-399.5 249.5,-411.5 249.5,-411.5 249.5,-417.5 243.5,-423.5 237.5,-423.5"/>
+<text text-anchor="middle" x="190" y="-401.8" font-family="Helvetica,sans-Serif" font-size="14.00">data_load_script</text>
+</g>
+<!-- data_load_script&#45;&gt;LoadDishDataIntoSqlite -->
+<g id="edge5" class="edge">
+<title>data_load_script&#45;&gt;LoadDishDataIntoSqlite</title>
+<path fill="none" stroke="black" d="M219.05,-387.32C236.98,-376.72 260.37,-362.89 280.8,-350.82"/>
+<polygon fill="black" stroke="black" points="282.82,-353.69 289.64,-345.59 279.25,-347.66 282.82,-353.69"/>
+</g>
+<!-- data_cleanup_sql_script -->
+<g id="node9" class="node">
+<title>data_cleanup_sql_script</title>
+<path fill="#fcfcfc" stroke="black" d="M213.5,-257.5C213.5,-257.5 70.5,-257.5 70.5,-257.5 64.5,-257.5 58.5,-251.5 58.5,-245.5 58.5,-245.5 58.5,-233.5 58.5,-233.5 58.5,-227.5 64.5,-221.5 70.5,-221.5 70.5,-221.5 213.5,-221.5 213.5,-221.5 219.5,-221.5 225.5,-227.5 225.5,-233.5 225.5,-233.5 225.5,-245.5 225.5,-245.5 225.5,-251.5 219.5,-257.5 213.5,-257.5"/>
+<text text-anchor="middle" x="142" y="-235.8" font-family="Helvetica,sans-Serif" font-size="14.00">data_cleanup_sql_script</text>
+</g>
+<!-- data_cleanup_sql_script&#45;&gt;DishDataCleanupWithSQL -->
+<g id="edge8" class="edge">
+<title>data_cleanup_sql_script&#45;&gt;DishDataCleanupWithSQL</title>
+<path fill="none" stroke="black" d="M173.17,-221.32C192.58,-210.63 217.96,-196.64 240.01,-184.49"/>
+<polygon fill="black" stroke="black" points="241.85,-187.48 248.92,-179.59 238.47,-181.35 241.85,-187.48"/>
+</g>
+<!-- Dish.csv_input_port -->
+<g id="node10" class="node">
+<title>Dish.csv_input_port</title>
+<ellipse fill="#ffffff" stroke="black" cx="394" cy="-638" rx="7" ry="7"/>
+</g>
+<!-- Dish.csv_input_port&#45;&gt;Dish.csv -->
+<g id="edge9" class="edge">
+<title>Dish.csv_input_port&#45;&gt;Dish.csv</title>
+<path fill="none" stroke="black" d="M394,-630.58C394,-624.38 394,-614.52 394,-604.66"/>
+<polygon fill="black" stroke="black" points="397.5,-604.55 394,-594.55 390.5,-604.55 397.5,-604.55"/>
+</g>
+</g>
+</svg>
